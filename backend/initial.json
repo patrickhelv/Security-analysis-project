@@ -1,0 +1,148 @@
+[
+    
+    {
+        "model": "adverts.advert",
+        "pk": 1,
+        "fields": {
+            "advertType": "ND_SITTER",
+            "owner": 3,
+            "content": "Hi,\nI really need a babysitter. The kids are very well behaved, and usually don't cause any trouble. I pay well.",
+            "date": "2022-01-06",
+            "start_time": "17:00:00",
+            "end_time": "21:00:00"
+        }
+    },
+    {
+        "model": "adverts.advert",
+        "pk": 2,
+        "fields": {
+            "advertType": "IS_SITTER",
+            "owner": 3,
+            "content": "Hi, my name is Bob, and I can be your babysitter. If you want, I can also bring my own kids, so that all the children can play together.",
+            "date": "2022-04-01",
+            "start_time": "11:00:00",
+            "end_time": "23:00:00"
+        }
+    },
+    {
+        "model": "adverts.advert",
+        "pk": 3,
+        "fields": {
+            "advertType": "IS_SITTER",
+            "owner": 2,
+            "content": "I am a student needing some extra cash. I have done babysitting a lot in the past, and I would say that I manage the task quite well.",
+            "date": "2022-04-09",
+            "start_time": "13:00:00",
+            "end_time": "23:00:00"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "07c97e6f6e7d96c9b25a246c3d0e74d8",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Alice",
+            "first_name": "",
+            "last_name": "",
+            "email": "alice@mail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-01-06T14:05:33Z",
+            "mfa_token": null,
+            "mfa_active": false,
+            "groups": [],
+            "user_permissions": [],
+            "reset_url": null
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "password": "ed2ce38032a540fac4ceb9c35babe3a2",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Bob",
+            "first_name": "",
+            "last_name": "",
+            "email": "bob@mail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-01-06T14:06:32Z",
+            "mfa_token": null,
+            "mfa_active": false,
+            "groups": [],
+            "user_permissions": [],
+            "reset_url": null
+        }
+    },
+    {
+        "model": "children.child",
+        "pk": 1,
+        "fields": {
+            "parent": 3,
+            "name": "Elan",
+            "info": "Birthdate: 6/5/2017\n\nAllergies: Nuts and lactose.\n\nBedtime at 21.00\n\nLikes to play on his iPad.",
+            "guardians": []
+        }
+    },
+    {
+        "model": "children.child",
+        "pk": 2,
+        "fields": {
+            "parent": 3,
+            "name": "Zarine",
+            "info": "Birthdate: 11/9/2019\n\nNo Allergies.\n\nBedtime at 19.00\n\nEats porridge.",
+            "guardians": []
+        }
+    },
+    
+    {
+        "model": "offers.offer",
+        "pk": 1,
+        "fields": {
+            "sender": "Bob",
+            "recipient": "Alice",
+            "advert": null,
+            "offerType": "GUARDIAN_OFFER",
+            "status": "A"
+        }
+    },
+    {
+        "model": "offers.offer",
+        "pk": 2,
+        "fields": {
+            "sender": "Alice",
+            "recipient": "Bob",
+            "advert": 1,
+            "offerType": "JOB_OFFER",
+            "status": "A"
+        }
+    },
+    {
+        "model": "offers.offer",
+        "pk": 3,
+        "fields": {
+            "sender": "Alice",
+            "recipient": "Bob",
+            "advert": null,
+            "offerType": "GUARDIAN_OFFER",
+            "status": "P"
+        }
+    },
+    {
+        "model": "offers.contract",
+        "pk": 1,
+        "fields": {
+            "finished": false,
+            "parent": 3,
+            "sitter": 2,
+            "content": "Hi,\nI really need a babysitter. The kids are very well behaved, and usually don't cause any trouble. I pay well.",
+            "date": "2022-01-06",
+            "start_time": "17:00:00",
+            "end_time": "21:00:00"
+        }
+    }
+]
