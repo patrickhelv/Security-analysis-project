@@ -4,13 +4,13 @@ Vulnerable Application for TDT4237 Spring 2022.
 
 # Security reports made for the website
 
--Finding vulnerabilites
+- Finding vulnerabilites
 
--Information gathering
+- Information gathering
 
--Mitigating vulnerabilities
+- Mitigating vulnerabilities
 
--Risk assessment
+- Risk assessment
 
 ## Prerequisites
 
