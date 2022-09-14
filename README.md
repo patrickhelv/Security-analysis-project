@@ -2,6 +2,13 @@
 
 Vulnerable Application for TDT4237 Spring 2022.
 
+# Security reports made for the website
+
+-Finding vulnerabilites
+-Information gathering
+-Mitigating vulnerabilities
+-Risk assessment
+
 ## Prerequisites
 
 The following must be installed before running this application.
